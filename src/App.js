@@ -82,6 +82,7 @@ function App() {
                       x2={10*(graphData[tag][hop][0][data[1]][0]+windowX/20)}
                       y2={10*(graphData[tag][hop][0][data[1]][1]+alpha+80)}
                       stroke = "black"
+                      strokeOpacity = {"0.4"}
                     >
                     </line>
                   </g>
@@ -100,15 +101,16 @@ function App() {
                       cx = {10*(node[1][0]+windowX/20)}
                       cy = {10*(node[1][1]+alpha+80)}
                       fill = "blue"
-                      fillOpacity = {"0.5"}
+                      fillOpacity = {"0.4"}
                     >
                     </circle>
                     <text
                       className = "node-label"
                       fill      = "black"
-                      fontSize  = {"20px"}
-                      x = {10*(node[1][0]+windowX/20 -1.5)}
-                      y = {10*(node[1][1]+alpha+80)}
+                      fontSize  = {"32px"}
+                      textAnchor = "middle"
+                      x = {10*(node[1][0]+windowX/20)}
+                      y = {10*(node[1][1]+alpha+80)+5}
                     >
                       {node[0]}
                     </text>
